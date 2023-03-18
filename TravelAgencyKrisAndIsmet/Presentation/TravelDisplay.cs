@@ -236,7 +236,6 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             Console.WriteLine("7. Get from-city");
             Console.WriteLine("8. Get to-city");
             Console.WriteLine("9. Show clients in travel");
-
         }
     }
 }

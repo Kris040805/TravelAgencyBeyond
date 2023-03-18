@@ -10,10 +10,10 @@ namespace TravelAgency.Data
     public class Travel
     {
         public int Id { get; set; }
-        public int FromCityId { get; set; }
-        public int ToCityId { get; set; }
-        public int BusId { get; set; }
-        public int DriverId { get; set; }
+        public int? FromCityId { get; set; }
+        public int? ToCityId { get; set; }
+        public int? BusId { get; set; }
+        public int? DriverId { get; set; }
         public DateTime DateOfTravel { get; set; }
         public ICollection<Client> Clients { get; set; }
         public City FromCity { get; set; }
