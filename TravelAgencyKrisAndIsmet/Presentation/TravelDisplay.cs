@@ -162,9 +162,10 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         }
         private void TravelGetFromCity()
         {
-            Console.WriteLine("Enter ID of travel to get from-city id");
+            Console.WriteLine("Enter ID of travel to get from-city");
             int id = int.Parse(Console.ReadLine());
             Travel travel = travelBusiness.Get(id);
+            
             if (travel != null)
             {
                 City city = travel.FromCity;

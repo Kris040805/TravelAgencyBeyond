@@ -55,9 +55,15 @@ namespace TravelAgency.Business
         }
         public Bus GetBusByTravelId(int travelId)
         {
+
             using (travelAgencyContext = new TravelAgencyContext())
             {
-                return travelAgencyContext.Travels.Find(travelId).Bus;
+                //Include(x=> x.Travel).ToList().Find(x=> x.Id==id)
+               
+                Travel travel=  travelAgencyContext.Travels.Find(travelId);
+                //travelAgencyContext.Buses.Find(travel.BusId)
+                travelAgencyContext.Entry(travel).Reference(x => x.Bus).Load();
+                return travel.Bus;
             }
         }
 
@@ -65,6 +71,7 @@ namespace TravelAgency.Business
         {
             using (travelAgencyContext = new TravelAgencyContext())
             {
+                
                 return travelAgencyContext.Travels.Find(travelId).FromCity;
             }
         }
@@ -73,6 +80,7 @@ namespace TravelAgency.Business
         {
             using (travelAgencyContext = new TravelAgencyContext())
             {
+                
                 return travelAgencyContext.Travels.Find(travelId).ToCity;
             }
         }

@@ -169,12 +169,10 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             var client = clientBusiness.Get(idClient);
             
             Console.WriteLine("Travel ID: " + client.Travel.Id);
-            
-            Console.WriteLine("From city:\nID: " + client.Travel.FromCity.Id + " \nCity:" + client.Travel.FromCity.Name);
-            /*Console.WriteLine("To city:\nID: " + travel.ToCity.Id + " \nCity: " + travel.ToCity.Name);
-            Console.WriteLine("Bus ID: " + travel.BusId);
-            //vij tuk
-            Console.WriteLine("Date of travel - " + travel.DateOfTravel.ToString());*/
+            Console.WriteLine("From city ID: " + client.Travel.FromCityId);
+            Console.WriteLine("To city ID: " + client.Travel.ToCityId);
+            Console.WriteLine("Bus ID: " + client.Travel.BusId);
+            Console.WriteLine("Date of travel - " + client.Travel.DateOfTravel.ToString());
         }
 
 
