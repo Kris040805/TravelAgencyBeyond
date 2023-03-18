@@ -119,7 +119,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         public void ShowDriverMenu()
         {
             Console.WriteLine(new string('-', 40));
-            Console.WriteLine(new string('-', 18) + "BUS MENU" + new string('-', 18));
+            Console.WriteLine(new string('-', 18) + "DRIVER MENU" + new string('-', 11));
             Console.WriteLine(new string('-', 40));
             Console.WriteLine("1. Add new driver");
             Console.WriteLine("2. Delete a driver");

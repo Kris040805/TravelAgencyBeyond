@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V4e4m32cM1RvJKV6siNTrNiPcfeQ30fNiKXSdkLkG/oslhQ8XEA0DP49PjOv7gfQ6lrMprz/YvNXH2KiogBz3w==",
+  "dgSpecHash": "K/oMH4gbi0WKXia/3Khvd8nAiygjvpHB+tkDD6RVWg6QMR8BhuVpjhZWDW5DmU9A0uM1g29oa0OvpHcYPW/zqQ==",
   "success": true,
-  "projectFilePath": "G:\\School\\IT kariera\\zadachi za uprajnenie\\11 klas\\Modul #7 Razrabotka na softuer\\Kursov-proekt\\Rep18mart2\\TravelAgencyKrisAndIsmet\\TravelAgencyKrisAndIsmet.csproj",
+  "projectFilePath": "G:\\School\\IT kariera\\zadachi za uprajnenie\\11 klas\\Modul #7 Razrabotka na softuer\\Kursov-proekt\\dano raboti\\TravelAgencyKrisAndIsmet\\TravelAgencyKrisAndIsmet.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kris\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Kris\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

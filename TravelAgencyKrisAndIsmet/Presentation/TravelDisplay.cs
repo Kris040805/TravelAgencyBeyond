@@ -52,12 +52,18 @@ namespace TravelAgencyKrisAndIsmet.Presentation
                 case 8:
                     TravelGetToCity();
                     break;
+                case 9:
+                    ShowClients();
+                    break;
                 default:
                     Console.WriteLine("Option not available!\nReturning to main menu...");
                     break;
             }
 
         }
+
+        
+
         private void TravelAdd()
         {
             Travel travel = new Travel();
@@ -194,12 +200,32 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             }
         }
 
+        private void ShowClients()
+        {
+            Console.WriteLine("Enter ID of travel to get its clients");
+            int id = int.Parse(Console.ReadLine());
+            Travel travel = travelBusiness.Get(id);
+            if (travel != null)
+            {
+                List<Client> clients = travelBusiness.ShowClients(id);
+                Console.WriteLine(new string('-', 40));
+                foreach (var client in clients)
+                {
+                    Console.WriteLine($"{client.Id} {client.FirstName} {client.LastName} {client.Age} {client.TravelId}");
+                }
+                Console.WriteLine(new string('-', 40));
+            }
+            else
+            {
+                Console.WriteLine("Travel not found!");
+            }
+        }
 
 
         public void ShowTravelMenu()
         {
             Console.WriteLine(new string('-', 40));
-            Console.WriteLine(new string('-', 18) + "BUS MENU" + new string('-', 18));
+            Console.WriteLine(new string('-', 18) + "TRAVEL MENU" + new string('-', 18));
             Console.WriteLine(new string('-', 40));
             Console.WriteLine("1. Add new travel");
             Console.WriteLine("2. Delete a travel");
@@ -209,6 +235,8 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             Console.WriteLine("6. Get bus by travel id");
             Console.WriteLine("7. Get from-city");
             Console.WriteLine("8. Get to-city");
+            Console.WriteLine("9. Show clients in travel");
+
         }
     }
 }

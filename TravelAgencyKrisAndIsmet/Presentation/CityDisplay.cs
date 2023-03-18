@@ -41,9 +41,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         private void CityAdd()
         {
             City city = new City();
-            Console.WriteLine("Enter name of city:");
+            Console.WriteLine("Enter name of city: ");
             city.Name = Console.ReadLine();
-            Console.WriteLine("Enter population:");
+            Console.WriteLine("Enter population: ");
             city.Population = int.Parse(Console.ReadLine());
             cityBusiness.Add(city);
         }
@@ -87,7 +87,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             var cities = cityBusiness.GetAll();
             foreach (var city in cities)
             {
-                Console.WriteLine($"{city.Id} {city.Name} Population{city.Population}");
+                Console.WriteLine($"{city.Id} {city.Name} Population: {city.Population}");
             }
         }
 

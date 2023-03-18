@@ -77,5 +77,12 @@ namespace TravelAgency.Business
             }
         }
 
+        public List<Client> ShowClients(int travelId)
+        {
+            using (travelAgencyContext = new TravelAgencyContext())
+            {
+                return travelAgencyContext.Travels.Find(travelId).Clients.ToList();
+            }
+        }
     }
 }
