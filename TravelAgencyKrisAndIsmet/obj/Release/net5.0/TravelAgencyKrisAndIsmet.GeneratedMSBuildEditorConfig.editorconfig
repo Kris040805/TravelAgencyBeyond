@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net5.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.PublishSingleFile = 
+build_property.IncludeAllContentForSelfExtract = 
+build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
+build_property.RootNamespace = TravelAgencyKrisAndIsmet
+build_property.ProjectDir = G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart2\TravelAgencyKrisAndIsmet\

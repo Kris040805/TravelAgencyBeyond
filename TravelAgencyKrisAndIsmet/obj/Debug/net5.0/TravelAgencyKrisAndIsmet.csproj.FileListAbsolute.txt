@@ -1,0 +1,130 @@
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\TravelAgencyKrisAndIsmet.exe
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\TravelAgencyKrisAndIsmet.deps.json
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\TravelAgencyKrisAndIsmet.runtimeconfig.json
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\TravelAgencyKrisAndIsmet.runtimeconfig.dev.json
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\TravelAgencyKrisAndIsmet.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\ref\TravelAgencyKrisAndIsmet.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\TravelAgencyKrisAndIsmet.pdb
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Humanizer.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.Extensions.Caching.Abstractions.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.Extensions.Caching.Memory.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.Extensions.Logging.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.Win32.SystemEvents.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Newtonsoft.Json.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\System.Drawing.Common.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\System.Runtime.Caching.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\System.Security.Permissions.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\System.Windows.Extensions.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\obj\Debug\net5.0\TravelAgencyKrisAndIsmet.csproj.AssemblyReference.cache
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\obj\Debug\net5.0\TravelAgencyKrisAndIsmet.GeneratedMSBuildEditorConfig.editorconfig
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\obj\Debug\net5.0\TravelAgencyKrisAndIsmet.AssemblyInfoInputs.cache
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\obj\Debug\net5.0\TravelAgencyKrisAndIsmet.AssemblyInfo.cs
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\obj\Debug\net5.0\TravelAgencyKrisAndIsmet.csproj.CoreCompileInputs.cache
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\obj\Debug\net5.0\TravelAgencyKrisAndIsmet.csproj.CopyComplete
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\obj\Debug\net5.0\TravelAgencyKrisAndIsmet.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\obj\Debug\net5.0\ref\TravelAgencyKrisAndIsmet.dll
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\obj\Debug\net5.0\TravelAgencyKrisAndIsmet.pdb
+Z:\Code\Git\Ismet\TravelAgencyIsmetKris\TravelAgencyKrisAndIsmet\obj\Debug\net5.0\TravelAgencyKrisAndIsmet.genruntimeconfig.cache
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\TravelAgencyKrisAndIsmet.exe
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\TravelAgencyKrisAndIsmet.deps.json
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\TravelAgencyKrisAndIsmet.runtimeconfig.json
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\TravelAgencyKrisAndIsmet.runtimeconfig.dev.json
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\TravelAgencyKrisAndIsmet.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\ref\TravelAgencyKrisAndIsmet.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\TravelAgencyKrisAndIsmet.pdb
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Humanizer.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.Extensions.Caching.Abstractions.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.Extensions.Caching.Memory.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.Extensions.Logging.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Microsoft.Win32.SystemEvents.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\Newtonsoft.Json.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\System.Drawing.Common.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\System.Runtime.Caching.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\System.Security.Permissions.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\System.Windows.Extensions.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\obj\Debug\net5.0\TravelAgencyKrisAndIsmet.csproj.AssemblyReference.cache
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\obj\Debug\net5.0\TravelAgencyKrisAndIsmet.GeneratedMSBuildEditorConfig.editorconfig
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\obj\Debug\net5.0\TravelAgencyKrisAndIsmet.AssemblyInfoInputs.cache
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\obj\Debug\net5.0\TravelAgencyKrisAndIsmet.AssemblyInfo.cs
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\obj\Debug\net5.0\TravelAgencyKrisAndIsmet.csproj.CoreCompileInputs.cache
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\obj\Debug\net5.0\TravelAgencyKrisAndIsmet.csproj.CopyComplete
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\obj\Debug\net5.0\TravelAgencyKrisAndIsmet.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\obj\Debug\net5.0\ref\TravelAgencyKrisAndIsmet.dll
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\obj\Debug\net5.0\TravelAgencyKrisAndIsmet.pdb
+G:\School\IT kariera\zadachi za uprajnenie\11 klas\Modul #7 Razrabotka na softuer\Kursov-proekt\Rep18mart\TravelAgencyKrisAndIsmet\obj\Debug\net5.0\TravelAgencyKrisAndIsmet.genruntimeconfig.cache
