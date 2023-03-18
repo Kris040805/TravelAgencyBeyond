@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TravelAgency.Business;
 using TravelAgency.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace TravelAgencyKrisAndIsmet.Presentation
 {
@@ -165,13 +166,15 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         {
             Console.WriteLine("Enter the ID of a client and his travel information will be shown");
             int idClient = int.Parse(Console.ReadLine());
-            var travel = clientBusiness.Get(idClient).Travel;
-            Console.WriteLine("Travel ID: " + travel.Id);
-            Console.WriteLine("From city:\nID: " + travel.FromCity.Id + " \nCity:" + travel.FromCity.Name);
-            Console.WriteLine("To city:\nID: " + travel.ToCity.Id + " \nCity: " + travel.ToCity.Name);
+            var client = clientBusiness.Get(idClient);
+            
+            Console.WriteLine("Travel ID: " + client.Travel.Id);
+            
+            Console.WriteLine("From city:\nID: " + client.Travel.FromCity.Id + " \nCity:" + client.Travel.FromCity.Name);
+            /*Console.WriteLine("To city:\nID: " + travel.ToCity.Id + " \nCity: " + travel.ToCity.Name);
             Console.WriteLine("Bus ID: " + travel.BusId);
             //vij tuk
-            Console.WriteLine("Date of travel - " + travel.DateOfTravel.ToString());
+            Console.WriteLine("Date of travel - " + travel.DateOfTravel.ToString());*/
         }
 
 
@@ -185,7 +188,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             Console.WriteLine("3. Get client");
             Console.WriteLine("4. Get all clients");
             Console.WriteLine("5. Update a client");
-            Console.WriteLine("5. Get client's travel");
+            Console.WriteLine("6. Get client's travel");
         }
     }
 }

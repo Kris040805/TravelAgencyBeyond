@@ -38,7 +38,7 @@ namespace TravelAgency.Business
         {
             using (travelAgencyContext = new TravelAgencyContext())
             {
-                return travelAgencyContext.Clients.Find(id);
+                return travelAgencyContext.Clients.Include(x=> x.Travel).ToList().Find(x=> x.Id==id);
             }
         }
 

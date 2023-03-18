@@ -23,9 +23,6 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         {
             ShowDriverMenu();
 
-            Console.WriteLine(new string('-', 40));
-            Console.WriteLine(new string('-', 18) + "DRIVER MENU" + new string('-', 18));
-            Console.WriteLine(new string('-', 40));
             int operation = int.Parse(Console.ReadLine());
             switch (operation)
             {
