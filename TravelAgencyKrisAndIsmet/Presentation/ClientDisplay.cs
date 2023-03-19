@@ -68,7 +68,14 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             client.Age = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter id of travel");
             client.TravelId = int.Parse(Console.ReadLine());
-            clientBusiness.Add(client);
+            try
+            {
+                clientBusiness.Add(client);
+            }
+            catch (Microsoft.EntityFrameworkCore.DbUpdateException)
+            {
+                Console.WriteLine("Client not created.\nInvalid travel!");
+            }
         }
 
 
@@ -114,7 +121,6 @@ namespace TravelAgencyKrisAndIsmet.Presentation
                 Console.WriteLine("Last name: " + client.LastName);
                 Console.WriteLine("Age : " + client.Age);
                 Console.WriteLine("Travel id: " + client.TravelId);
-                Console.WriteLine(new string('-', 40));
             }
             else
             {
@@ -129,8 +135,13 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         {
             Console.WriteLine(new string('-', 40));
             Console.WriteLine(new string(' ', 16) + "CLIENTS" + new string(' ', 16));
-            Console.WriteLine(new string('-', 40));
             var clients = clientBusiness.GetAll();
+            if (clients.Count == 0)
+            {
+                Console.WriteLine("No clients in database!");
+                return;
+            }
+
             foreach (var client in clients)
             {
                 Console.WriteLine($"{client.Id} {client.FirstName} {client.LastName} {client.Age}, Travel ID -{client.TravelId}");
@@ -182,7 +193,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         public void ShowClientMenu()
         {
             Console.WriteLine(new string('-', 40));
-            Console.WriteLine(new string('-', 18) + "BUS MENU" + new string('-', 18));
+            Console.WriteLine(new string('-', 15) + "CLIENT MENU" + new string('-', 14));
             Console.WriteLine(new string('-', 40));
             Console.WriteLine("1. Add new client");
             Console.WriteLine("2. Delete a client");

@@ -108,7 +108,6 @@ namespace TravelAgencyKrisAndIsmet.Presentation
                 Console.WriteLine("Model: " + bus.Model);
                 Console.WriteLine("Capacity: " + bus.Capacity);
                 Console.WriteLine("Kilometers ran: " + bus.KilometersRun);
-                Console.WriteLine(new string('-', 40));
             }
             else
             {
@@ -123,7 +122,6 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         {
             Console.WriteLine(new string('-', 40));
             Console.WriteLine(new string(' ', 16) + "BUSES" + new string(' ', 16));
-            Console.WriteLine(new string('-', 40));
             var buses = busBusiness.GetAll();
             foreach (var bus in buses)
             {
@@ -158,7 +156,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         public void ShowBusMenu()
         {
             Console.WriteLine(new string('-', 40));
-            Console.WriteLine(new string('-', 18) + "BUS MENU" + new string('-', 18));
+            Console.WriteLine(new string('-', 16) + "BUS MENU" + new string('-', 16));
             Console.WriteLine(new string('-', 40));
             Console.WriteLine("1. Add new bus");
             Console.WriteLine("2. Delete a bus");

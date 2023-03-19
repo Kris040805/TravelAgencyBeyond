@@ -83,7 +83,6 @@ namespace TravelAgencyKrisAndIsmet.Presentation
                 Console.WriteLine("ID: " + city.Id);
                 Console.WriteLine("Name: " + city.Name);
                 Console.WriteLine("Population: " + city.Population);
-                Console.WriteLine(new string('-', 40));
             }
         }
 
@@ -91,7 +90,6 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         {
             Console.WriteLine(new string('-', 40));
             Console.WriteLine(new string(' ', 16) + "CITIES" + new string(' ', 16));
-            Console.WriteLine(new string('-', 40));
             var cities = cityBusiness.GetAll();
             foreach (var city in cities)
             {
@@ -121,7 +119,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         public void ShowCityMenu()
         {
             Console.WriteLine(new string('-', 40));
-            Console.WriteLine(new string('-', 18) + "CITY MENU" + new string('-', 18));
+            Console.WriteLine(new string('-', 16) + "CITY MENU" + new string('-', 15));
             Console.WriteLine(new string('-', 40));
             Console.WriteLine("1. Add new city");
             Console.WriteLine("2. Delete a city");

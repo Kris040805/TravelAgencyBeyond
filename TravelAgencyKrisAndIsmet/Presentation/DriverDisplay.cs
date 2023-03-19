@@ -41,7 +41,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             driver.FirstName = Console.ReadLine();
             Console.WriteLine("Enter last name:");
             driver.LastName = Console.ReadLine();
-            Console.WriteLine("Enter age");
+            Console.WriteLine("Enter age:");
             driver.Age = int.Parse(Console.ReadLine());
             driverBusiness.Add(driver);
         }
@@ -62,7 +62,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
                 {
                     Console.WriteLine("You cannot delete this driver.");
                 }
-                }
+            }
             else
             {
                 Console.WriteLine("Driver not found!");
@@ -126,7 +126,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         public void ShowDriverMenu()
         {
             Console.WriteLine(new string('-', 40));
-            Console.WriteLine(new string('-', 18) + "DRIVER MENU" + new string('-', 11));
+            Console.WriteLine(new string('-', 15) + "DRIVER MENU" + new string('-', 14));
             Console.WriteLine(new string('-', 40));
             Console.WriteLine("1. Add new driver");
             Console.WriteLine("2. Delete a driver");
