@@ -69,7 +69,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             bus.Model = Console.ReadLine();
             Console.WriteLine("Enter capacity:");
             bus.Capacity = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter kilometers runed:");
+            Console.WriteLine("Enter kilometers ran:");
             bus.KilometersRun = int.Parse(Console.ReadLine());
             busBusiness.Add(bus);
         }
@@ -141,7 +141,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
                 bus.Model = Console.ReadLine();
                 Console.WriteLine("Enter capacity: ");
                 bus.Capacity = int.Parse(Console.ReadLine());
-                Console.WriteLine("Enter kilometers runed: ");
+                Console.WriteLine("Enter kilometers ran: ");
                 bus.KilometersRun = int.Parse(Console.ReadLine());
                 busBusiness.Update(bus);
             }
