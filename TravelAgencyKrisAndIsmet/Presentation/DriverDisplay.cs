@@ -72,17 +72,21 @@ namespace TravelAgencyKrisAndIsmet.Presentation
 
         private void DriverGet()
         {
-            Console.WriteLine("Enter the ID of the driver you want to delete:");
+            Console.WriteLine("Enter ID to get: ");
             int id = int.Parse(Console.ReadLine());
-            var driver = driverBusiness.Get(id);
+            Driver driver = driverBusiness.Get(id);
             if (driver != null)
             {
-                driverBusiness.Delete(id);
-                Console.WriteLine("Done.");
+                Console.WriteLine(new string('-', 40));
+                Console.WriteLine("ID: " + driver.Id);
+                Console.WriteLine("First name: " + driver.FirstName);
+                Console.WriteLine("Last name: " + driver.LastName);
+                Console.WriteLine("Age : " + driver.Age);
+                Console.WriteLine(new string('-', 40));
             }
             else
             {
-                Console.WriteLine("Driver not found!");
+                Console.WriteLine("No driver found");
             }
         }
 

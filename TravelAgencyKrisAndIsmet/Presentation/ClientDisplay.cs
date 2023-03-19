@@ -119,6 +119,10 @@ namespace TravelAgencyKrisAndIsmet.Presentation
                 Console.WriteLine("Travel id: " + client.TravelId);
                 Console.WriteLine(new string('-', 40));
             }
+            else
+            {
+                Console.WriteLine("No client found");
+            }
         }
 
         /// <summary>

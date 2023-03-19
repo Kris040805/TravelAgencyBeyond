@@ -69,7 +69,6 @@ namespace TravelAgencyKrisAndIsmet.Presentation
 
                 }
             }
-
             else
             {
                 Console.WriteLine("City not found!");

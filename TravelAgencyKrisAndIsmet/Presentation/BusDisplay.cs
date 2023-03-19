@@ -118,6 +118,10 @@ namespace TravelAgencyKrisAndIsmet.Presentation
                 Console.WriteLine("Kilometers ran: " + bus.KilometersRun);
                 Console.WriteLine(new string('-', 40));
             }
+            else
+            {
+                Console.WriteLine("No driver bus");
+            }
         }
 
         /// <summary>
