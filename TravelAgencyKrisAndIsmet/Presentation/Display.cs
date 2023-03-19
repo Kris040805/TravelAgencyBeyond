@@ -20,6 +20,7 @@ namespace TravelAgency.Presentation
         public void Input()
         {
             int operation = -1;
+            PrintLogo();
             do
             {
                 ShowMainMenu();
@@ -43,11 +44,11 @@ namespace TravelAgency.Presentation
                         break;
                     case 6:
                         Console.Clear();
+                        PrintLogo();
                         break;
                     case 7:
                         Console.WriteLine("Closing...");
                         Thread.Sleep(1000);
-                        
                         break;
                     default:
                         Console.WriteLine("Option not available!");
@@ -75,6 +76,20 @@ namespace TravelAgency.Presentation
             Console.WriteLine("5. Travel menu");
             Console.WriteLine("6. Clear console");
             Console.WriteLine("7. Close program");
+        }
+
+        public void PrintLogo()
+        {
+            Console.WriteLine(@"
+  ______                            _ 
+  | ___ \                          | |
+  | |_/ / ___ _   _  ___  _ __   __| |
+  | ___ \/ _ \ | | |/ _ \| '_ \ / _` |
+  | |_/ /  __/ |_| | (_) | | | | (_| |
+  \____/ \___|\__, |\___/|_| |_|\__,_|
+               __/ |                  
+              |___/                   
+");
         }
     }
 }
