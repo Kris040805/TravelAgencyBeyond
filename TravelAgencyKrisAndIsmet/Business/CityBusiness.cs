@@ -10,6 +10,7 @@ namespace TravelAgency.Business
     public class CityBusiness
     {
         TravelAgencyContext travelAgencyContext;
+
         public void Add(City city)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -17,9 +18,8 @@ namespace TravelAgency.Business
                 travelAgencyContext.Cities.Add(city);
                 travelAgencyContext.SaveChanges();
             }
-
-
         }
+
         public void Delete(int id)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -31,7 +31,6 @@ namespace TravelAgency.Business
                     travelAgencyContext.SaveChanges();
                 }
             }
-
         }
 
         public City Get(int id)
@@ -55,7 +54,6 @@ namespace TravelAgency.Business
             using (travelAgencyContext = new TravelAgencyContext())
             {
                 var item = travelAgencyContext.Cities.Find(city.Id);
-
                 if (item != null)
                 {
                     travelAgencyContext.Entry(item).CurrentValues.SetValues(city);

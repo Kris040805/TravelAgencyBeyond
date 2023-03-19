@@ -59,10 +59,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
                     Console.WriteLine("Option not available!\nReturning to main menu...");
                     break;
             }
-
         }
-
-
 
         private void TravelAdd()
         {
@@ -96,6 +93,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
                 Console.WriteLine(new string('-', 40));
             }
         }
+
         private void TravelDelete()
         {
             Console.WriteLine("Enter ID to delete: ");
@@ -126,7 +124,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             Console.WriteLine(new string('-', 40));
             var travels = travelBusiness.GetAll();
             foreach (var travel in travels)
-            {// Warning toString метода за dateTime
+            {
                 Console.WriteLine($"{travel.Id}, From City ID: {travel.FromCityId}, To City ID: {travel.ToCityId}, Bus ID: {travel.BusId}, Driver ID: {travel.DriverId}, Date: {travel.DateOfTravel.ToShortDateString()}");
             }
         }
@@ -152,6 +150,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
                 Console.WriteLine("Travel not found!");
             }
         }
+
         private void TravelGetBus()
         {
             Console.WriteLine("Enter ID of travel to see its bus: ");
@@ -172,6 +171,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
                 Console.WriteLine("Travel not found!");
             }
         }
+
         private void TravelGetFromCity()
         {
             Console.WriteLine("Enter ID of travel to get from-city");
@@ -190,8 +190,8 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             {
                 Console.WriteLine("Travel not found!");
             }
-
         }
+
         private void TravelGetToCity()
         {
             Console.WriteLine("Enter ID of travel to get to-city id");
@@ -238,7 +238,6 @@ namespace TravelAgencyKrisAndIsmet.Presentation
                 Console.WriteLine("Travel not found!");
             }
         }
-
 
         public void ShowTravelMenu()
         {

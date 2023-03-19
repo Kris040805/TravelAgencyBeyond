@@ -11,6 +11,7 @@ namespace TravelAgency.Business
     public class ClientBusiness
     {
         TravelAgencyContext travelAgencyContext;
+
         public void Add(Client client)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -18,9 +19,8 @@ namespace TravelAgency.Business
                 travelAgencyContext.Clients.Add(client);
                 travelAgencyContext.SaveChanges();
             }
-
-
         }
+
         public void Delete(int id)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -63,7 +63,9 @@ namespace TravelAgency.Business
             }
         }
 
-        //Given the unique id of a client returns the client's travel information
+        /// <summary>
+        /// Given the unique id of a client returns the client's travel information
+        /// </summary>
         public Travel GetTravel(int clientId)
         {
             using (travelAgencyContext = new TravelAgencyContext())

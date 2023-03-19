@@ -12,6 +12,7 @@ namespace TravelAgency.Business
     public class BusBusiness
     {
         private TravelAgencyContext travelAgencyContext;
+
         public void Add(Bus bus)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -19,14 +20,13 @@ namespace TravelAgency.Business
                 travelAgencyContext.Buses.Add(bus);
                 travelAgencyContext.SaveChanges();
             }
-
         }
+
         public void Delete(int id)
         {
             using (travelAgencyContext = new TravelAgencyContext())
             {
                 var item = travelAgencyContext.Buses.Find(id);
-
                 if (item != null)
                 {
                     travelAgencyContext.Buses.Remove(item);

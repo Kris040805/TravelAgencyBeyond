@@ -11,8 +11,10 @@ namespace TravelAgency.Data
     {
         [Key]
         public int Id { get; set; }
+        
         [Required]
         public string Model { get; set; }
+        
         [Required]
         public int Capacity { get; set; }
         public int? KilometersRun { get; set; }
@@ -29,7 +31,5 @@ namespace TravelAgency.Data
         {
 
         }
-
-
     }
 }

@@ -11,13 +11,17 @@ namespace TravelAgency.Data
     {
         [Key]
         public int Id { get; set; }
+        
         [Required]
         public string FirstName { get; set; }
+        
         [Required]
         public string LastName { get; set; }
         public int? Age { get; set; }
+        
         [Required]
         public int TravelId { get; set; }
+
         public Travel Travel { get; set; }
 
         public Client(int id, string firstName, string lastName, int age, int travelId)

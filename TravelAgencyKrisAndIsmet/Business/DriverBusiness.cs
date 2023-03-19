@@ -11,6 +11,7 @@ namespace TravelAgency.Business
     public class DriverBusiness
     {
         TravelAgencyContext travelAgencyContext;
+
         public void Add(Driver driver)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -18,8 +19,8 @@ namespace TravelAgency.Business
                 travelAgencyContext.Drivers.Add(driver);
                 travelAgencyContext.SaveChanges();
             }
-
         }
+
         public void Delete(int id)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -45,6 +46,7 @@ namespace TravelAgency.Business
                 return travelAgencyContext.Drivers.ToList();
             }
         }
+
         public void Update(Driver driver)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -54,6 +56,5 @@ namespace TravelAgency.Business
                 travelAgencyContext.SaveChanges();
             }
         }
-
     }
 }

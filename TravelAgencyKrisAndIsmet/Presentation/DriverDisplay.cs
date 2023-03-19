@@ -18,7 +18,6 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             DriverMenuInput();
         }
 
-
         public void DriverMenuInput()
         {
             ShowDriverMenu();

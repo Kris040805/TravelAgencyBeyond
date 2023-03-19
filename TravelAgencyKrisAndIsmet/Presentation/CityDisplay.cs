@@ -18,9 +18,6 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             CityMenuInput();
         }
 
-
-
-
         public void CityMenuInput()
         {
             ShowCityMenu();
@@ -65,7 +62,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
                 }
                 catch (Microsoft.EntityFrameworkCore.DbUpdateException)
                 {
-                Console.WriteLine("You cannot delete this city.");
+                    Console.WriteLine("You cannot delete this city.");
 
                 }
             }
@@ -120,8 +117,6 @@ namespace TravelAgencyKrisAndIsmet.Presentation
                 Console.WriteLine("City not found!");
             }
         }
-
-
 
         public void ShowCityMenu()
         {

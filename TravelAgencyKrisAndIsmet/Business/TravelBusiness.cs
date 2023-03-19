@@ -20,6 +20,7 @@ namespace TravelAgency.Business
                 travelAgencyContext.SaveChanges();
             }
         }
+
         public void Delete(int id)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -37,6 +38,7 @@ namespace TravelAgency.Business
                 return travelAgencyContext.Travels.Find(id);
             }
         }
+
         public List<Travel> GetAll()
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -44,6 +46,7 @@ namespace TravelAgency.Business
                 return travelAgencyContext.Travels.ToList();
             }
         }
+
         public void Update(Travel travel)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -53,9 +56,9 @@ namespace TravelAgency.Business
                 travelAgencyContext.SaveChanges();
             }
         }
+
         public Bus GetBusByTravelId(int travelId)
         {
-
             using (travelAgencyContext = new TravelAgencyContext())
             {
                 //Include(x=> x.Travel).ToList().Find(x=> x.Id==id)

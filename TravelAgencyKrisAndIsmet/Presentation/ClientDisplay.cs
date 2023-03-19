@@ -12,19 +12,18 @@ namespace TravelAgencyKrisAndIsmet.Presentation
     public class ClientDisplay
     {
         ClientBusiness clientBusiness;
+
         public ClientDisplay()
         {
             clientBusiness = new ClientBusiness();
             ClientMenuInput();
         }
 
-
         /// <summary>
         /// Принтира менюто и иска вход
         /// </summary>
         private void ClientMenuInput()
         {
-
             ShowClientMenu();
 
             int operation = int.Parse(Console.ReadLine());
@@ -70,8 +69,6 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             Console.WriteLine("Enter id of travel");
             client.TravelId = int.Parse(Console.ReadLine());
             clientBusiness.Add(client);
-
-
         }
 
 
@@ -87,8 +84,8 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             {
                 try
                 {
-                clientBusiness.Delete(id);
-                Console.WriteLine("Done.");
+                    clientBusiness.Delete(id);
+                    Console.WriteLine("Done.");
                 }
                 catch (Microsoft.EntityFrameworkCore.DbUpdateException)
                 {
@@ -145,7 +142,6 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         /// </summary>
         public void ClientUpdate()
         {
-
             Console.WriteLine("Enter ID to update: ");
             int id = int.Parse(Console.ReadLine());
             Client client = clientBusiness.Get(id);
@@ -165,9 +161,6 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             {
                 Console.WriteLine("Client not found!");
             }
-
-
-
         }
 
         /// <summary>
@@ -178,14 +171,13 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             Console.WriteLine("Enter the ID of a client and his travel information will be shown");
             int idClient = int.Parse(Console.ReadLine());
             var client = clientBusiness.Get(idClient);
-            
+
             Console.WriteLine("Travel ID: " + client.Travel.Id);
             Console.WriteLine("From city ID: " + client.Travel.FromCityId);
             Console.WriteLine("To city ID: " + client.Travel.ToCityId);
             Console.WriteLine("Bus ID: " + client.Travel.BusId);
             Console.WriteLine("Date of travel - " + client.Travel.DateOfTravel.ToShortDateString());
         }
-
 
         public void ShowClientMenu()
         {

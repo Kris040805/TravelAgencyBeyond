@@ -14,7 +14,6 @@ namespace TravelAgency.Data
         public int? FromCityId { get; set; }
         public int? ToCityId { get; set; }
         public int? BusId { get; set; }
-
         public int? DriverId { get; set; }
 
         [Required]

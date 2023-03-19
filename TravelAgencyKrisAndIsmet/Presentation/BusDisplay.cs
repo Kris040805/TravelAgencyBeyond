@@ -18,16 +18,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             BusMenuInput();
         }
 
-
-        // МОЖЕМ ДА ДОБАВИМ ИНДИКАТОР НАПРИМЕР СЛЕД КАТО СЕ ДОБАВИ АВТОБУС В БАЗАТА ДАННИ СЕ ИЗПИСВА БЪС АДДЕД РЕТЪРНИН ТО МЕЙН МЕНЙУ...
-
-
-
-
         /// <summary>
         /// Print the menu and wait for input
         /// </summary>
-
         private void BusMenuInput()
         {
             ShowBusMenu();
@@ -56,7 +49,6 @@ namespace TravelAgencyKrisAndIsmet.Presentation
                     Console.WriteLine("Option not available!\nReturning to main menu...");
                     break;
             }
-
         }
 
         /// <summary>
@@ -162,7 +154,6 @@ namespace TravelAgencyKrisAndIsmet.Presentation
                 Console.WriteLine("Bus not found!");
             }
         }
-
 
         public void ShowBusMenu()
         {
