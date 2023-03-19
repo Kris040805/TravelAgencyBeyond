@@ -148,31 +148,34 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         {
             Console.WriteLine("Enter ID of travel to see its bus: ");
             int id = int.Parse(Console.ReadLine());
-            Travel travel = travelBusiness.Get(id);
-
-            // Така ли е май-добре да го оставим или нещо по-добро да измислим
-            Bus bus = travel.Bus;
-
-            Console.WriteLine(new string('-', 40));
-            Console.WriteLine("ID: " + bus.Id);
-            Console.WriteLine("Model: " + bus.Model);
-            Console.WriteLine("Capacity: " + bus.Capacity);
-            Console.WriteLine("Kilometers runed: " + bus.KilometersRun);
-            Console.WriteLine(new string('-', 40));
+            //Travel travel = travelBusiness.Get(id);
+            Bus bus = travelBusiness.GetBusByTravelId(id);
+            if (bus != null)
+            {
+                Console.WriteLine(new string('-', 40));
+                Console.WriteLine("ID: " + bus.Id);
+                Console.WriteLine("Model: " + bus.Model);
+                Console.WriteLine("Capacity: " + bus.Capacity);
+                Console.WriteLine("Kilometers runed: " + bus.KilometersRun);
+                Console.WriteLine(new string('-', 40));
+            }
+            else
+            {
+                Console.WriteLine("Travel not found!");
+            }
         }
         private void TravelGetFromCity()
         {
             Console.WriteLine("Enter ID of travel to get from-city");
             int id = int.Parse(Console.ReadLine());
-            Travel travel = travelBusiness.Get(id);
+            City fromCity = travelBusiness.GetFromCity(id);
             
-            if (travel != null)
+            if (fromCity != null)
             {
-                City city = travel.FromCity;
                 Console.WriteLine(new string('-', 40));
-                Console.WriteLine("ID: " + city.Id);
-                Console.WriteLine("Name: " + city.Name);
-                Console.WriteLine("Population: " + city.Population);
+                Console.WriteLine("ID: " + fromCity.Id);
+                Console.WriteLine("Name: " + fromCity.Name);
+                Console.WriteLine("Population: " + fromCity.Population);
                 Console.WriteLine(new string('-', 40));
             }
             else
@@ -185,14 +188,13 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         {
             Console.WriteLine("Enter ID of travel to get to-city id");
             int id = int.Parse(Console.ReadLine());
-            Travel travel = travelBusiness.Get(id);
-            if (travel != null)
+            City toCity = travelBusiness.GetToCity(id);
+            if (toCity != null)
             {
-                City city = travel.ToCity;
                 Console.WriteLine(new string('-', 40));
-                Console.WriteLine("ID: " + city.Id);
-                Console.WriteLine("Name: " + city.Name);
-                Console.WriteLine("Population: " + city.Population);
+                Console.WriteLine("ID: " + toCity.Id);
+                Console.WriteLine("Name: " + toCity.Name);
+                Console.WriteLine("Population: " + toCity.Population);
                 Console.WriteLine(new string('-', 40));
             }
             else

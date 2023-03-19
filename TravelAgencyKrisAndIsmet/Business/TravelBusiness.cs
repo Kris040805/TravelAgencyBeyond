@@ -59,10 +59,10 @@ namespace TravelAgency.Business
             using (travelAgencyContext = new TravelAgencyContext())
             {
                 //Include(x=> x.Travel).ToList().Find(x=> x.Id==id)
-                Travel travel = travelAgencyContext.Travels.Find(travelId);
-                
                 //travelAgencyContext.Clients.Include(x=> x.Travel).ToList().Find(x=> x.Id==id)
                 //travelAgencyContext.Buses.Find(travel.BusId)
+                
+                Travel travel = travelAgencyContext.Travels.Find(travelId);
                 travelAgencyContext.Entry(travel).Reference(x => x.Bus).Load();
                 return travel.Bus;
             }
@@ -72,8 +72,9 @@ namespace TravelAgency.Business
         {
             using (travelAgencyContext = new TravelAgencyContext())
             {
-
-                return travelAgencyContext.Travels.Find(travelId).FromCity;
+                Travel travel = travelAgencyContext.Travels.Find(travelId);
+                travelAgencyContext.Entry(travel).Reference(x => x.FromCity).Load();
+                return travel.FromCity;
             }
         }
 
@@ -81,8 +82,9 @@ namespace TravelAgency.Business
         {
             using (travelAgencyContext = new TravelAgencyContext())
             {
-
-                return travelAgencyContext.Travels.Find(travelId).ToCity;
+                Travel travel = travelAgencyContext.Travels.Find(travelId);
+                travelAgencyContext.Entry(travel).Reference(x => x.ToCity).Load();
+                return travel.ToCity;
             }
         }
 
@@ -90,7 +92,9 @@ namespace TravelAgency.Business
         {
             using (travelAgencyContext = new TravelAgencyContext())
             {
-                return travelAgencyContext.Travels.Find(travelId).Clients.ToList();
+                Travel travel = travelAgencyContext.Travels.Find(travelId);
+                travelAgencyContext.Entry(travel).Collection(x => x.Clients).Load();
+                return travel.Clients.ToList();
             }
         }
     }
