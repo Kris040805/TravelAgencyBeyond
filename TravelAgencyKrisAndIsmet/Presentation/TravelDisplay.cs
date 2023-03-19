@@ -120,9 +120,13 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         private void TravelGetAll()
         {
             Console.WriteLine(new string('-', 40));
-            Console.WriteLine(new string(' ', 16) + "TRAVEL" + new string(' ', 11));
-            Console.WriteLine(new string('-', 40));
+            Console.WriteLine(new string(' ', 14) + "TRAVELS" + new string(' ', 14));
             var travels = travelBusiness.GetAll();
+            if (travels.Count == 0)
+            {
+                Console.WriteLine("No buses found!");
+                return;
+            }
             foreach (var travel in travels)
             {
                 Console.WriteLine($"{travel.Id}, From City ID: {travel.FromCityId}, To City ID: {travel.ToCityId}, Bus ID: {travel.BusId}, Driver ID: {travel.DriverId}, Date: {travel.DateOfTravel.ToShortDateString()}");
@@ -135,11 +139,11 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             Travel travel = travelBusiness.Get(id);
             if (travel != null)
             {
-                Console.WriteLine("Enter from-city id: ");
+                Console.WriteLine("Enter from-city ID: ");
                 travel.FromCityId = int.Parse(Console.ReadLine());
-                Console.WriteLine("Enter to-city id: ");
+                Console.WriteLine("Enter to-city ID: ");
                 travel.ToCityId = int.Parse(Console.ReadLine());
-                Console.WriteLine("Enter bus id: ");
+                Console.WriteLine("Enter bus ID: ");
                 travel.BusId = int.Parse(Console.ReadLine());
                 Console.WriteLine("Enter date of travel: ");
                 travel.DateOfTravel = DateTime.Parse(Console.ReadLine());

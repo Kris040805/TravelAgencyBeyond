@@ -93,8 +93,13 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         {
             Console.WriteLine(new string('-', 40));
             Console.WriteLine(new string(' ', 16) + "DRIVERS" + new string(' ', 16));
-            Console.WriteLine(new string('-', 40));
+            
             var drivers = driverBusiness.GetAll();
+            if (drivers.Count == 0)
+            {
+                Console.WriteLine("No drivers found!");
+                return;
+            }
             foreach (var driver in drivers)
             {
                 Console.WriteLine($"{driver.Id} {driver.FirstName} {driver.LastName} Age{driver.Age}");

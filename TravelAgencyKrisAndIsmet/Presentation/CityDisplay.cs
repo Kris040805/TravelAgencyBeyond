@@ -91,6 +91,11 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             Console.WriteLine(new string('-', 40));
             Console.WriteLine(new string(' ', 16) + "CITIES" + new string(' ', 16));
             var cities = cityBusiness.GetAll();
+            if (cities.Count == 0)
+            {
+                Console.WriteLine("No cities found!");
+                return;
+            }
             foreach (var city in cities)
             {
                 Console.WriteLine($"{city.Id} {city.Name} Population: {city.Population}");

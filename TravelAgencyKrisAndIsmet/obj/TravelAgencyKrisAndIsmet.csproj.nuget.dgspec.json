@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "G:\\School\\IT kariera\\zadachi za uprajnenie\\11 klas\\Modul #7 Razrabotka na softuer\\Kursov-proekt\\dano raboti\\TravelAgencyKrisAndIsmet\\TravelAgencyKrisAndIsmet.csproj": {}
+    "Z:\\Code\\Git\\Ismet\\TravelAgencyVol2\\TravelAgencyKrisAndIsmet\\TravelAgencyKrisAndIsmet.csproj": {}
   },
   "projects": {
-    "G:\\School\\IT kariera\\zadachi za uprajnenie\\11 klas\\Modul #7 Razrabotka na softuer\\Kursov-proekt\\dano raboti\\TravelAgencyKrisAndIsmet\\TravelAgencyKrisAndIsmet.csproj": {
+    "Z:\\Code\\Git\\Ismet\\TravelAgencyVol2\\TravelAgencyKrisAndIsmet\\TravelAgencyKrisAndIsmet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\School\\IT kariera\\zadachi za uprajnenie\\11 klas\\Modul #7 Razrabotka na softuer\\Kursov-proekt\\dano raboti\\TravelAgencyKrisAndIsmet\\TravelAgencyKrisAndIsmet.csproj",
+        "projectUniqueName": "Z:\\Code\\Git\\Ismet\\TravelAgencyVol2\\TravelAgencyKrisAndIsmet\\TravelAgencyKrisAndIsmet.csproj",
         "projectName": "TravelAgencyKrisAndIsmet",
-        "projectPath": "G:\\School\\IT kariera\\zadachi za uprajnenie\\11 klas\\Modul #7 Razrabotka na softuer\\Kursov-proekt\\dano raboti\\TravelAgencyKrisAndIsmet\\TravelAgencyKrisAndIsmet.csproj",
-        "packagesPath": "C:\\Users\\Kris\\.nuget\\packages\\",
-        "outputPath": "G:\\School\\IT kariera\\zadachi za uprajnenie\\11 klas\\Modul #7 Razrabotka na softuer\\Kursov-proekt\\dano raboti\\TravelAgencyKrisAndIsmet\\obj\\",
+        "projectPath": "Z:\\Code\\Git\\Ismet\\TravelAgencyVol2\\TravelAgencyKrisAndIsmet\\TravelAgencyKrisAndIsmet.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "Z:\\Code\\Git\\Ismet\\TravelAgencyVol2\\TravelAgencyKrisAndIsmet\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Kris\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

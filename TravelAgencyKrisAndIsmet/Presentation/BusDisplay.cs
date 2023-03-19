@@ -123,6 +123,11 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             Console.WriteLine(new string('-', 40));
             Console.WriteLine(new string(' ', 16) + "BUSES" + new string(' ', 16));
             var buses = busBusiness.GetAll();
+            if (buses.Count == 0)
+            {
+                Console.WriteLine("No buses found!");
+                return;
+            }
             foreach (var bus in buses)
             {
                 Console.WriteLine($"{bus.Id} {bus.Model} {bus.Capacity} {bus.KilometersRun}");
