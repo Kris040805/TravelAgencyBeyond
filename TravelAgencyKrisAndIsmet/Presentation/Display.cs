@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using TravelAgency.Business;
 using TravelAgency.Data;
@@ -40,13 +41,18 @@ namespace TravelAgency.Presentation
                     case 5:
                         TravelDisplay travelDisplay = new TravelDisplay();
                         break;
-                    case 6://END 
+                    case 6:
+                        Console.Clear();
+                        break;
+                    case 7:
+                        Console.WriteLine("Closing...");
+                        Thread.Sleep(1000);
                         break;
                     default:
                         Console.WriteLine("Option not available!");
                         break;
                 }
-            } while (operation != 6);
+            } while (operation != 7);
         }
 
 
@@ -57,6 +63,7 @@ namespace TravelAgency.Presentation
          */
         public void ShowMainMenu()
         {
+            Thread.Sleep(1000);
             Console.WriteLine(new string('-', 40));
             Console.WriteLine(new string('-', 18) + "MENU" + new string('-', 18));
             Console.WriteLine(new string('-', 40));
@@ -65,6 +72,8 @@ namespace TravelAgency.Presentation
             Console.WriteLine("3. Client menu");
             Console.WriteLine("4. Driver menu");
             Console.WriteLine("5. Travel menu");
+            Console.WriteLine("6. Clear console");
+            Console.WriteLine("7. Close program");
         }
     }
 }

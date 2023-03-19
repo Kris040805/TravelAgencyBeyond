@@ -92,7 +92,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
                 Console.WriteLine("To-city id: " + travel.ToCityId);
                 Console.WriteLine("Bus id: " + travel.BusId);
                 Console.WriteLine("Driver id: " + travel.DriverId);
-                Console.WriteLine("Date of travel: " + travel.DateOfTravel);
+                Console.WriteLine("Date of travel: " + travel.DateOfTravel.ToShortDateString());
                 Console.WriteLine(new string('-', 40));
             }
         }
@@ -119,7 +119,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             var travels = travelBusiness.GetAll();
             foreach (var travel in travels)
             {// Warning toString метода за dateTime
-                Console.WriteLine($"{travel.Id} {travel.FromCityId} {travel.ToCityId} {travel.BusId} {travel.DriverId} {travel.DateOfTravel.ToString()}");
+                Console.WriteLine($"{travel.Id} {travel.FromCityId} {travel.ToCityId} {travel.BusId} {travel.DriverId} {travel.DateOfTravel.ToShortDateString()}");
             }
         }
         private void TravelUpdate()
@@ -212,9 +212,16 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             {
                 List<Client> clients = travelBusiness.ShowClients(id);
                 Console.WriteLine(new string('-', 40));
-                foreach (var client in clients)
+                if (clients.Count!=0)
                 {
-                    Console.WriteLine($"{client.Id} {client.FirstName} {client.LastName} {client.Age} {client.TravelId}");
+                    foreach (var client in clients)
+                    {
+                        Console.WriteLine($"{client.Id} {client.FirstName} {client.LastName} {client.Age}");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("No clients in this travel!");
                 }
                 Console.WriteLine(new string('-', 40));
             }

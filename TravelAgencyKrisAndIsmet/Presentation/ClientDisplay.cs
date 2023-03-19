@@ -172,7 +172,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             Console.WriteLine("From city ID: " + client.Travel.FromCityId);
             Console.WriteLine("To city ID: " + client.Travel.ToCityId);
             Console.WriteLine("Bus ID: " + client.Travel.BusId);
-            Console.WriteLine("Date of travel - " + client.Travel.DateOfTravel.ToString());
+            Console.WriteLine("Date of travel - " + client.Travel.DateOfTravel.ToShortDateString());
         }
 
 
