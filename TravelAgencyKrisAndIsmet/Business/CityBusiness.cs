@@ -55,7 +55,7 @@ namespace TravelAgency.Business
             using (travelAgencyContext = new TravelAgencyContext())
             {
                 var item = travelAgencyContext.Cities.Find(city.Id);
-                
+
                 if (item != null)
                 {
                     travelAgencyContext.Entry(item).CurrentValues.SetValues(city);

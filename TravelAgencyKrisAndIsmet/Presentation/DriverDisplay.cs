@@ -54,9 +54,16 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             Driver driver = driverBusiness.Get(id);
             if (driver != null)
             {
-                driverBusiness.Delete(id);
-                Console.WriteLine("Done.");
-            }
+                try
+                {
+                    driverBusiness.Delete(id);
+                    Console.WriteLine("Done.");
+                }
+                catch (Microsoft.EntityFrameworkCore.DbUpdateException)
+                {
+                    Console.WriteLine("You cannot delete this driver.");
+                }
+                }
             else
             {
                 Console.WriteLine("Driver not found!");

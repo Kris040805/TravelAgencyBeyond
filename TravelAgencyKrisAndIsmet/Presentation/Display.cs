@@ -47,6 +47,7 @@ namespace TravelAgency.Presentation
                     case 7:
                         Console.WriteLine("Closing...");
                         Thread.Sleep(1000);
+                        
                         break;
                     default:
                         Console.WriteLine("Option not available!");

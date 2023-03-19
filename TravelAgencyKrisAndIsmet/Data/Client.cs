@@ -33,7 +33,5 @@ namespace TravelAgency.Data
         {
 
         }
-
-
     }
 }

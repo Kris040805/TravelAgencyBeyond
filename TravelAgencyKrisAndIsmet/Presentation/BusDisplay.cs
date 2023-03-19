@@ -84,8 +84,16 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             Bus bus = busBusiness.Get(id);
             if (bus != null)
             {
-                busBusiness.Delete(id);
-                Console.WriteLine("Done.");
+                try
+                {
+                    busBusiness.Delete(id);
+                    Console.WriteLine("Done");
+                }
+                catch (Microsoft.EntityFrameworkCore.DbUpdateException)
+                {
+                    Console.WriteLine("You cannot delete this bus.");
+
+                }
             }
             else
             {

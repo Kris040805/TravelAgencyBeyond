@@ -55,9 +55,21 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             var city = cityBusiness.Get(id);
             if (city != null)
             {
-                cityBusiness.Delete(id);
-                Console.WriteLine("Done.");
+                /*cityBusiness.Delete(id);
+                Console.WriteLine("Done");*/
+                //
+                try
+                {
+                    cityBusiness.Delete(id);
+                    Console.WriteLine("Done");
+                }
+                catch (Microsoft.EntityFrameworkCore.DbUpdateException)
+                {
+                Console.WriteLine("You cannot delete this city.");
+
+                }
             }
+
             else
             {
                 Console.WriteLine("City not found!");

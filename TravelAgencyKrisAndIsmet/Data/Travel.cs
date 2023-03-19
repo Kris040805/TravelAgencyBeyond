@@ -14,13 +14,16 @@ namespace TravelAgency.Data
         public int? FromCityId { get; set; }
         public int? ToCityId { get; set; }
         public int? BusId { get; set; }
+
         public int? DriverId { get; set; }
+
         [Required]
         public DateTime DateOfTravel { get; set; }
         public ICollection<Client> Clients { get; set; }
         public City FromCity { get; set; }
         public City ToCity { get; set; }
         public Bus Bus { get; set; }
+        public Driver Driver { get; set; }
 
         public Travel(int id, int fromCityId, int toCityId, int busId, DateTime dateOfTravel):base()
         {

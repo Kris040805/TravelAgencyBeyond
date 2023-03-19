@@ -62,7 +62,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
 
         }
 
-        
+
 
         private void TravelAdd()
         {
@@ -73,7 +73,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             travel.ToCityId = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter bus ID:");
             travel.BusId = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter first driver ID:");
+            Console.WriteLine("Enter driver ID:");
             travel.DriverId = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter date of travel: ");
             travel.DateOfTravel = DateTime.ParseExact(Console.ReadLine(), "dd-MM-yyyy", CultureInfo.InvariantCulture);
@@ -103,8 +103,16 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             Travel travel = travelBusiness.Get(id);
             if (travel != null)
             {
-                travelBusiness.Delete(id);
-                Console.WriteLine("Done.");
+                try
+                {
+                    travelBusiness.Delete(id);
+                    Console.WriteLine("Done.");
+
+                }
+                catch (Microsoft.EntityFrameworkCore.DbUpdateException)
+                {
+                    Console.WriteLine("You cannot delete this travel");
+                }
             }
             else
             {
@@ -114,12 +122,12 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         private void TravelGetAll()
         {
             Console.WriteLine(new string('-', 40));
-            Console.WriteLine(new string(' ', 16) + "BUSES" + new string(' ', 16));
+            Console.WriteLine(new string(' ', 16) + "TRAVEL" + new string(' ', 11));
             Console.WriteLine(new string('-', 40));
             var travels = travelBusiness.GetAll();
             foreach (var travel in travels)
             {// Warning toString метода за dateTime
-                Console.WriteLine($"{travel.Id} {travel.FromCityId} {travel.ToCityId} {travel.BusId} {travel.DriverId} {travel.DateOfTravel.ToShortDateString()}");
+                Console.WriteLine($"{travel.Id}, From City ID: {travel.FromCityId}, To City ID: {travel.ToCityId}, Bus ID: {travel.BusId}, Driver ID: {travel.DriverId}, Date: {travel.DateOfTravel.ToShortDateString()}");
             }
         }
         private void TravelUpdate()
@@ -169,7 +177,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             Console.WriteLine("Enter ID of travel to get from-city");
             int id = int.Parse(Console.ReadLine());
             City fromCity = travelBusiness.GetFromCity(id);
-            
+
             if (fromCity != null)
             {
                 Console.WriteLine(new string('-', 40));
@@ -212,7 +220,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             {
                 List<Client> clients = travelBusiness.ShowClients(id);
                 Console.WriteLine(new string('-', 40));
-                if (clients.Count!=0)
+                if (clients.Count != 0)
                 {
                     foreach (var client in clients)
                     {

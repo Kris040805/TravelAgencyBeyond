@@ -10,7 +10,7 @@ using TravelAgency.Data;
 namespace TravelAgencyKrisAndIsmet.Migrations
 {
     [DbContext(typeof(TravelAgencyContext))]
-    [Migration("20230318141211_initial")]
+    [Migration("20230319103121_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -31,10 +31,11 @@ namespace TravelAgencyKrisAndIsmet.Migrations
                     b.Property<int>("Capacity")
                         .HasColumnType("int");
 
-                    b.Property<int>("KilometersRun")
+                    b.Property<int?>("KilometersRun")
                         .HasColumnType("int");
 
                     b.Property<string>("Model")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -50,9 +51,10 @@ namespace TravelAgencyKrisAndIsmet.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Population")
+                    b.Property<int?>("Population")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -67,13 +69,15 @@ namespace TravelAgencyKrisAndIsmet.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("Age")
+                    b.Property<int?>("Age")
                         .HasColumnType("int");
 
                     b.Property<string>("FirstName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("TravelId")
@@ -93,13 +97,15 @@ namespace TravelAgencyKrisAndIsmet.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("Age")
+                    b.Property<int?>("Age")
                         .HasColumnType("int");
 
                     b.Property<string>("FirstName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -133,6 +139,8 @@ namespace TravelAgencyKrisAndIsmet.Migrations
 
                     b.HasIndex("BusId");
 
+                    b.HasIndex("DriverId");
+
                     b.HasIndex("FromCityId");
 
                     b.HasIndex("ToCityId");
@@ -157,6 +165,10 @@ namespace TravelAgencyKrisAndIsmet.Migrations
                         .WithMany()
                         .HasForeignKey("BusId");
 
+                    b.HasOne("TravelAgency.Data.Driver", "Driver")
+                        .WithMany()
+                        .HasForeignKey("DriverId");
+
                     b.HasOne("TravelAgency.Data.City", "FromCity")
                         .WithMany()
                         .HasForeignKey("FromCityId");
@@ -166,6 +178,8 @@ namespace TravelAgencyKrisAndIsmet.Migrations
                         .HasForeignKey("ToCityId");
 
                     b.Navigation("Bus");
+
+                    b.Navigation("Driver");
 
                     b.Navigation("FromCity");
 

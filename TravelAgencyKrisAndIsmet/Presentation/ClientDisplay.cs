@@ -85,8 +85,15 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             Client client = clientBusiness.Get(id);
             if (client != null)
             {
+                try
+                {
                 clientBusiness.Delete(id);
                 Console.WriteLine("Done.");
+                }
+                catch (Microsoft.EntityFrameworkCore.DbUpdateException)
+                {
+                    Console.WriteLine("You cannot delete this client");
+                }
             }
             else
             {
