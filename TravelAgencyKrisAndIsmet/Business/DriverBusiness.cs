@@ -12,6 +12,9 @@ namespace TravelAgency.Business
     {
         TravelAgencyContext travelAgencyContext;
 
+        /// <summary>
+        /// Adds a driver to the database 
+        /// </summary>
         public void Add(Driver driver)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -21,6 +24,9 @@ namespace TravelAgency.Business
             }
         }
 
+        /// <summary>
+        /// Deletes the driver with this ID from the database
+        /// </summary>
         public void Delete(int id)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -31,6 +37,9 @@ namespace TravelAgency.Business
             }
         }
 
+        /// <summary>
+        /// When given the ID, returns the driver
+        /// </summary>
         public Driver Get(int id)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -39,6 +48,9 @@ namespace TravelAgency.Business
             }
         }
 
+        /// <summary>
+        /// Returns all drivers currently in the database
+        /// </summary>
         public List<Driver> GetAll()
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -46,7 +58,9 @@ namespace TravelAgency.Business
                 return travelAgencyContext.Drivers.ToList();
             }
         }
-
+        /// <summary>
+        /// Updates the old driver with the new driver
+        /// </summary>
         public void Update(Driver driver)
         {
             using (travelAgencyContext = new TravelAgencyContext())

@@ -10,7 +10,9 @@ namespace TravelAgency.Business
     public class CityBusiness
     {
         TravelAgencyContext travelAgencyContext;
-
+        /// <summary>
+        /// Adds a city to the database 
+        /// </summary>
         public void Add(City city)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -20,6 +22,9 @@ namespace TravelAgency.Business
             }
         }
 
+        /// <summary>
+        /// Deletes the city with this ID from the database
+        /// </summary>
         public void Delete(int id)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -33,6 +38,9 @@ namespace TravelAgency.Business
             }
         }
 
+        /// <summary>
+        /// When given the ID, returns the city
+        /// </summary>
         public City Get(int id)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -40,7 +48,9 @@ namespace TravelAgency.Business
                 return travelAgencyContext.Cities.Find(id);
             }
         }
-
+        /// <summary>
+        /// Returns all cities currently in the database
+        /// </summary>
         public List<City> GetAll()
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -49,6 +59,9 @@ namespace TravelAgency.Business
             }
         }
 
+        /// <summary>
+        /// Updates the old city with the new city
+        /// </summary>
         public void Update(City city)
         {
             using (travelAgencyContext = new TravelAgencyContext())

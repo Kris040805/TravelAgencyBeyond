@@ -13,6 +13,9 @@ namespace TravelAgency.Business
     {
         private TravelAgencyContext travelAgencyContext;
 
+        /// <summary>
+        /// Adds a bus to the database 
+        /// </summary>
         public void Add(Bus bus)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -22,6 +25,9 @@ namespace TravelAgency.Business
             }
         }
 
+        /// <summary>
+        /// Deletes the bus with this ID from the database
+        /// </summary>
         public void Delete(int id)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -35,6 +41,9 @@ namespace TravelAgency.Business
             }
         }
 
+        /// <summary>
+        /// When given the ID, returns the bus
+        /// </summary>
         public Bus Get(int id)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -43,6 +52,9 @@ namespace TravelAgency.Business
             }
         }
 
+        /// <summary>
+        /// Returns all busses currently in the database
+        /// </summary>
         public List<Bus> GetAll()
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -51,6 +63,9 @@ namespace TravelAgency.Business
             }
         }
 
+        /// <summary>
+        /// Updates the old bus with the new bus
+        /// </summary>
         public void Update(Bus bus)
         {
             using (travelAgencyContext = new TravelAgencyContext())

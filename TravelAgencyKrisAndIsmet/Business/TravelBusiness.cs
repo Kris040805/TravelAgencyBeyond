@@ -12,6 +12,9 @@ namespace TravelAgency.Business
     {
         TravelAgencyContext travelAgencyContext;
 
+        /// <summary>
+        /// Adds a trave; to the database 
+        /// </summary>
         public void Add(Travel travel)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -21,6 +24,9 @@ namespace TravelAgency.Business
             }
         }
 
+        /// <summary>
+        /// Deletes the travel with this ID from the database
+        /// </summary>
         public void Delete(int id)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -31,6 +37,9 @@ namespace TravelAgency.Business
             }
         }
 
+        /// <summary>
+        /// When given the ID, returns the travel
+        /// </summary>
         public Travel Get(int id)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -39,6 +48,9 @@ namespace TravelAgency.Business
             }
         }
 
+        /// <summary>
+        /// Returns all travels currently in the database
+        /// </summary>
         public List<Travel> GetAll()
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -46,7 +58,9 @@ namespace TravelAgency.Business
                 return travelAgencyContext.Travels.ToList();
             }
         }
-
+        /// <summary>
+        /// Updates the travel bus with the new travel
+        /// </summary>
         public void Update(Travel travel)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -57,6 +71,9 @@ namespace TravelAgency.Business
             }
         }
 
+        /// <summary>
+        /// Returns the bus which is used in the travel with the ID
+        /// </summary>
         public Bus GetBusByTravelId(int travelId)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -71,6 +88,9 @@ namespace TravelAgency.Business
             }
         }
 
+        /// <summary>
+        /// Returns the city from which the bus departs used in the travel with the entered ID
+        /// </summary>
         public City GetFromCity(int travelId)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -81,6 +101,9 @@ namespace TravelAgency.Business
             }
         }
 
+        /// <summary>
+        /// Returns the destination of the travel with the entered ID
+        /// </summary>
         public City GetToCity(int travelId)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -91,6 +114,11 @@ namespace TravelAgency.Business
             }
         }
 
+        /// <summary>
+        /// Returns all clients which are registered to the travel with the entered ID
+        /// </summary>
+        /// <param name="travelId"></param>
+        /// <returns></returns>
         public List<Client> ShowClients(int travelId)
         {
             using (travelAgencyContext = new TravelAgencyContext())

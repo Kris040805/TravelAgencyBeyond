@@ -18,6 +18,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             DriverMenuInput();
         }
 
+        /// <summary>
+        /// Print the menu and wait for input
+        /// </summary>
         public void DriverMenuInput()
         {
             ShowDriverMenu();
@@ -34,6 +37,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             }
         }
 
+        /// <summary>
+        /// Manually add a new driver to the database
+        /// </summary>
         private void DriverAdd()
         {
             Driver driver = new Driver();
@@ -46,6 +52,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             driverBusiness.Add(driver);
         }
 
+        /// <summary>
+        /// Delete a driver which matches the entered ID
+        /// </summary>
         private void DriverDelete()
         {
             Console.WriteLine("Enter ID to delete: ");
@@ -69,6 +78,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             }
         }
 
+        /// <summary>
+        /// Displays information about the driver for the travel
+        /// </summary>
         private void DriverGet()
         {
             Console.WriteLine("Enter ID to get: ");
@@ -89,6 +101,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             }
         }
 
+        /// <summary>
+        /// Displays information about all drivers in the database
+        /// </summary>
         private void DriverGetAll()
         {
             Console.WriteLine(new string('-', 40));
@@ -106,6 +121,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             }
         }
 
+        /// <summary>
+        /// Update a driver in the database
+        /// </summary>
         private void DriverUpdate()
         {
             Console.WriteLine("Enter ID to update: ");
@@ -128,6 +146,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         }
 
 
+        /// <summary>
+        /// Prints out the driver menu
+        /// </summary>
         public void ShowDriverMenu()
         {
             Console.WriteLine(new string('-', 40));

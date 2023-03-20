@@ -12,6 +12,9 @@ namespace TravelAgency.Business
     {
         TravelAgencyContext travelAgencyContext;
 
+        /// <summary>
+        /// Adds a client to the database 
+        /// </summary>
         public void Add(Client client)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -21,6 +24,9 @@ namespace TravelAgency.Business
             }
         }
 
+        /// <summary>
+        /// Deletes the client with this ID from the database
+        /// </summary>
         public void Delete(int id)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -34,6 +40,9 @@ namespace TravelAgency.Business
             }
         }
 
+        /// <summary>
+        /// When given the ID, returns the client
+        /// </summary>
         public Client Get(int id)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -42,6 +51,9 @@ namespace TravelAgency.Business
             }
         }
 
+        /// <summary>
+        /// Returns all clients currently in the database
+        /// </summary>
         public List<Client> GetAll()
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -49,7 +61,9 @@ namespace TravelAgency.Business
                 return travelAgencyContext.Clients.ToList();
             }
         }
-
+        /// <summary>
+        /// Updates the old client with the new client
+        /// </summary>
         public void Update(Client client)
         {
             using (travelAgencyContext = new TravelAgencyContext())
@@ -64,7 +78,7 @@ namespace TravelAgency.Business
         }
 
         /// <summary>
-        /// Given the unique id of a client returns the client's travel information
+        /// Given the unique id of a client, returns the client's travel information
         /// </summary>
         public Travel GetTravel(int clientId)
         {

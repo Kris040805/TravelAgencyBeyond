@@ -20,7 +20,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         }
 
         /// <summary>
-        /// Принтира менюто и иска вход
+        /// Print the menu and wait for input
         /// </summary>
         private void ClientMenuInput()
         {
@@ -80,7 +80,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
 
 
         /// <summary>
-        /// Given the id the method deletes a client from the database 
+        /// Delete a client which matches the entered ID
         /// </summary>
         public void ClientDelete()
         {
@@ -106,7 +106,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         }
 
         /// <summary>
-        /// The method returns information about a client given the id
+        /// Displays information about the bus for the travel
         /// </summary>
         public void ClientGet()
         {
@@ -129,7 +129,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         }
 
         /// <summary>
-        /// The following method returns all clients currently in the database
+        /// Displays information about all clients in the database
         /// </summary>
         public void ClientGetAll()
         {
@@ -149,7 +149,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         }
 
         /// <summary>
-        /// актуализира информацията за клиента на когото ID-то е въведено
+        /// Update a client in the database
         /// </summary>
         public void ClientUpdate()
         {
@@ -175,7 +175,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         }
 
         /// <summary>
-        /// При дадено ID на клиент се връща информацията за неговото пътуване 
+        /// Returns the travel information about a client
         /// </summary>
         public void ClientGetTravelByClientId()
         {
@@ -190,6 +190,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             Console.WriteLine("Date of travel - " + client.Travel.DateOfTravel.ToShortDateString());
         }
 
+        /// <summary>
+        /// Prints out the client menu
+        /// </summary>
         public void ShowClientMenu()
         {
             Console.WriteLine(new string('-', 40));

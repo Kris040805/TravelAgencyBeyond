@@ -17,6 +17,9 @@ namespace TravelAgency.Presentation
             Input();
         }
 
+        /// <summary>
+        /// Prints the menu and waits for user input
+        /// </summary>
         public void Input()
         {
             int operation = -1;
@@ -58,11 +61,9 @@ namespace TravelAgency.Presentation
         }
 
 
-        /* От исмет
-        може да трябва да променим заглавията на всички менюта за да са симетрични
-        защото при различните менюта ще се отпечатат на различна дължина тези 18 тирета и може да изглежда грозно
-        най вероятно ще го оправим като от втория ню стринг с тиретата се извърши това---> 18 - (дължината на думата Бъс, например Бъс меню)
-         */
+        /// <summary>
+        /// Prints out the main menu
+        /// </summary>
         public void ShowMainMenu()
         {
             Thread.Sleep(1000);
@@ -78,6 +79,9 @@ namespace TravelAgency.Presentation
             Console.WriteLine("7. Close program");
         }
 
+        /// <summary>
+        /// Prints the agency's logo
+        /// </summary>
         public void PrintLogo()
         {
             Console.WriteLine(@"

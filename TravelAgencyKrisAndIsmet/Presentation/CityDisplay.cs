@@ -18,6 +18,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             CityMenuInput();
         }
 
+        /// <summary>
+        /// Prints the menu and wait for input
+        /// </summary>
         public void CityMenuInput()
         {
             ShowCityMenu();
@@ -35,6 +38,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             }
         }
 
+        /// <summary>
+        /// Manually add a new city to the database
+        /// </summary>
         private void CityAdd()
         {
             City city = new City();
@@ -45,6 +51,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             cityBusiness.Add(city);
         }
 
+        /// <summary>
+        /// Delete a city which matches the entered ID
+        /// </summary>
         private void CityDelete()
         {
             Console.WriteLine("Enter the ID of the city you want to delete:");
@@ -72,6 +81,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             }
         }
 
+        /// <summary>
+        /// Displays information about the city for the travel
+        /// </summary>
         private void CityGet()
         {
             Console.WriteLine("Enter ID to get: ");
@@ -86,6 +98,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             }
         }
 
+        /// <summary>
+        /// Displays information about all cities in the database
+        /// </summary>
         private void CityGetAll()
         {
             Console.WriteLine(new string('-', 40));
@@ -102,6 +117,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             }
         }
 
+        /// <summary>
+        /// Update a city in the database
+        /// </summary>
         private void CityUpdate()
         {
             Console.WriteLine("Enter ID to update: ");
@@ -121,6 +139,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             }
         }
 
+        /// <summary>
+        /// Prints out the city menu
+        /// </summary>
         public void ShowCityMenu()
         {
             Console.WriteLine(new string('-', 40));

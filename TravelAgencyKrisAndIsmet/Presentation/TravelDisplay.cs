@@ -19,6 +19,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             TravelMenuInput();
         }
 
+        /// <summary>
+        /// Print the menu and wait for input
+        /// </summary>
         private void TravelMenuInput()
         {
             ShowTravelMenu();
@@ -61,6 +64,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             }
         }
 
+        /// <summary>
+        /// Manually add a new travel to the database
+        /// </summary>
         private void TravelAdd()
         {
             Travel travel = new Travel();
@@ -76,24 +82,10 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             travel.DateOfTravel = DateTime.ParseExact(Console.ReadLine(), "dd-MM-yyyy", CultureInfo.InvariantCulture);
             travelBusiness.Add(travel);
         }
-        private void TravelGet()
-        {
-            Console.WriteLine("Enter ID to get: ");
-            int id = int.Parse(Console.ReadLine());
-            Travel travel = travelBusiness.Get(id);
-            if (travel != null)
-            {
-                Console.WriteLine(new string('-', 40));
-                Console.WriteLine("ID: " + travel.Id);
-                Console.WriteLine("From-city id: " + travel.FromCityId);
-                Console.WriteLine("To-city id: " + travel.ToCityId);
-                Console.WriteLine("Bus id: " + travel.BusId);
-                Console.WriteLine("Driver id: " + travel.DriverId);
-                Console.WriteLine("Date of travel: " + travel.DateOfTravel.ToShortDateString());
-                Console.WriteLine(new string('-', 40));
-            }
-        }
 
+        /// <summary>
+        /// Delete a travel which matches the entered ID
+        /// </summary>
         private void TravelDelete()
         {
             Console.WriteLine("Enter ID to delete: ");
@@ -117,6 +109,31 @@ namespace TravelAgencyKrisAndIsmet.Presentation
                 Console.WriteLine("Travel not found!");
             }
         }
+
+        /// <summary>
+        /// Displays information about the travel for the travel
+        /// </summary>
+        private void TravelGet()
+        {
+            Console.WriteLine("Enter ID to get: ");
+            int id = int.Parse(Console.ReadLine());
+            Travel travel = travelBusiness.Get(id);
+            if (travel != null)
+            {
+                Console.WriteLine(new string('-', 40));
+                Console.WriteLine("ID: " + travel.Id);
+                Console.WriteLine("From-city id: " + travel.FromCityId);
+                Console.WriteLine("To-city id: " + travel.ToCityId);
+                Console.WriteLine("Bus id: " + travel.BusId);
+                Console.WriteLine("Driver id: " + travel.DriverId);
+                Console.WriteLine("Date of travel: " + travel.DateOfTravel.ToShortDateString());
+                Console.WriteLine(new string('-', 40));
+            }
+        }
+
+        /// <summary>
+        /// Displays information about all travels in the database
+        /// </summary>
         private void TravelGetAll()
         {
             Console.WriteLine(new string('-', 40));
@@ -132,6 +149,10 @@ namespace TravelAgencyKrisAndIsmet.Presentation
                 Console.WriteLine($"{travel.Id}, From City ID: {travel.FromCityId}, To City ID: {travel.ToCityId}, Bus ID: {travel.BusId}, Driver ID: {travel.DriverId}, Date: {travel.DateOfTravel.ToShortDateString()}");
             }
         }
+
+        /// <summary>
+        /// Update a travel in the database
+        /// </summary>        
         private void TravelUpdate()
         {
             Console.WriteLine("Enter ID to update: ");
@@ -155,6 +176,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             }
         }
 
+        /// <summary>
+        /// Prints information  about the bus from a travel
+        /// </summary>
         private void TravelGetBus()
         {
             Console.WriteLine("Enter ID of travel to see its bus: ");
@@ -176,6 +200,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             }
         }
 
+        /// <summary>
+        /// Prints information about the starting city of a travel
+        /// </summary>
         private void TravelGetFromCity()
         {
             Console.WriteLine("Enter ID of travel to get from-city");
@@ -196,6 +223,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             }
         }
 
+        /// <summary>
+        /// Prints information about the destination city of a travel
+        /// </summary>
         private void TravelGetToCity()
         {
             Console.WriteLine("Enter ID of travel to get to-city id");
@@ -215,6 +245,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             }
         }
 
+        /// <summary>
+        /// Prints out information about all clients in a travel
+        /// </summary>
         private void ShowClients()
         {
             Console.WriteLine("Enter ID of travel to get its clients");
@@ -243,6 +276,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             }
         }
 
+        /// <summary>
+        /// Prints out the travel menu
+        /// </summary>
         public void ShowTravelMenu()
         {
             Console.WriteLine(new string('-', 40));

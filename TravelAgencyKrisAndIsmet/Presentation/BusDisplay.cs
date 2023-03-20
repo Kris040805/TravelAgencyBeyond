@@ -19,7 +19,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         }
 
         /// <summary>
-        /// Print the menu and wait for input
+        /// Prints the menu and wait for input
         /// </summary>
         private void BusMenuInput()
         {
@@ -67,7 +67,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         }
 
         /// <summary>
-        /// Delete a bus by given id
+        /// Delete a bus which matches the entered ID
         /// </summary>
         private void BusDelete()
         {
@@ -158,6 +158,9 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             }
         }
 
+        /// <summary>
+        /// Prints out the bus menu
+        /// </summary>
         public void ShowBusMenu()
         {
             Console.WriteLine(new string('-', 40));
