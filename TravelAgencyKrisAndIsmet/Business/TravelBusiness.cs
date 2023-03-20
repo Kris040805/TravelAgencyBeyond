@@ -86,7 +86,7 @@ namespace TravelAgency.Business
                 travelAgencyContext.Entry(travel).Reference(x => x.Bus).Load();
                 return travel.Bus;
             }
-        }
+        } 
 
         /// <summary>
         /// Returns the city from which the bus departs used in the travel with the entered ID
