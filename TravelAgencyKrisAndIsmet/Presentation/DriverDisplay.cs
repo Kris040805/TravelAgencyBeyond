@@ -25,7 +25,15 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         {
             ShowDriverMenu();
 
-            int operation = int.Parse(Console.ReadLine());
+            int operation = -1;
+            try
+            {
+                operation = int.Parse(Console.ReadLine());
+            }
+            catch (FormatException)
+            {
+            }
+
             switch (operation)
             {
                 case 1: DriverAdd(); break;
@@ -108,7 +116,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         {
             Console.WriteLine(new string('-', 40));
             Console.WriteLine(new string(' ', 16) + "DRIVERS" + new string(' ', 16));
-            
+
             var drivers = driverBusiness.GetAll();
             if (drivers.Count == 0)
             {

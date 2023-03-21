@@ -21,6 +21,7 @@ namespace TravelAgency.Business
             {
                 travelAgencyContext.Travels.Add(travel);
                 travelAgencyContext.SaveChanges();
+               
             }
         }
 

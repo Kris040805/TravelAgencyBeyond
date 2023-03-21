@@ -28,7 +28,13 @@ namespace TravelAgencyKrisAndIsmet.Presentation
 
             int operation = -1;
 
-            operation = int.Parse(Console.ReadLine());
+            try
+            {
+                operation = int.Parse(Console.ReadLine());
+            }
+            catch (FormatException)
+            { }
+
             switch (operation)
             {
                 case 1:
@@ -78,9 +84,16 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             travel.BusId = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter driver ID:");
             travel.DriverId = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter date of travel: ");
-            travel.DateOfTravel = DateTime.ParseExact(Console.ReadLine(), "dd-MM-yyyy", CultureInfo.InvariantCulture);
-            travelBusiness.Add(travel);
+            Console.WriteLine("Enter date of travel (dd-MM-yyyy): ");
+            try
+            {
+                travel.DateOfTravel = DateTime.ParseExact(Console.ReadLine(), "dd-MM-yyyy", CultureInfo.InvariantCulture);
+                travelBusiness.Add(travel);
+            }
+            catch
+            {
+                Console.WriteLine("Invalid ID or date!");
+            }
         }
 
         /// <summary>

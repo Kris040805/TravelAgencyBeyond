@@ -25,8 +25,15 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         {
             ShowCityMenu();
 
-            int operation = int.Parse(Console.ReadLine());
+            int operation = -1;
+            try
+            {
+                operation = int.Parse(Console.ReadLine());
+            }
+            catch (FormatException)
+            {
 
+            }
             switch (operation)
             {
                 case 1: CityAdd(); break;

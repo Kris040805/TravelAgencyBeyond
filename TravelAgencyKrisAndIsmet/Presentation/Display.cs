@@ -27,7 +27,14 @@ namespace TravelAgency.Presentation
             do
             {
                 ShowMainMenu();
+                try
+                {                
                 operation = int.Parse(Console.ReadLine());
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Invalid entry!");
+                }
                 switch (operation)
                 {
                     case 1:

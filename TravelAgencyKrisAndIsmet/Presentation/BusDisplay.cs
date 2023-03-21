@@ -27,7 +27,13 @@ namespace TravelAgencyKrisAndIsmet.Presentation
 
             int operation = -1;
 
+            try
+            {
             operation = int.Parse(Console.ReadLine());
+            }
+            catch (FormatException)
+            {
+            }
             switch (operation)
             {
                 case 1:
