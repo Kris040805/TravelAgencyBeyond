@@ -31,5 +31,13 @@ namespace TravelAgency.Data
         {
 
         }
+
+        // ctor za NUnit testovete
+        public Bus(string model, int capacity, int? kilometersRun)
+        {
+            Model = model;
+            Capacity = capacity;
+            KilometersRun = kilometersRun;
+        }
     }
 }

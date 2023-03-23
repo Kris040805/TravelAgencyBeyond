@@ -10,15 +10,15 @@ namespace TravelAgency.Data
 {
     public class TravelAgencyContext : DbContext
     {
-        public DbSet<Bus> Buses { get; set; }
+        public virtual DbSet<Bus> Buses { get; set; }
 
-        public DbSet<City> Cities { get; set; }
+        public virtual DbSet<City> Cities { get; set; }
 
-        public DbSet<Client> Clients { get; set; }
+        public virtual DbSet<Client> Clients { get; set; }
 
-        public DbSet<Driver> Drivers { get; set; }
+        public virtual DbSet<Driver> Drivers { get; set; }
 
-        public DbSet<Travel> Travels { get; set; }
+        public virtual DbSet<Travel> Travels { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
