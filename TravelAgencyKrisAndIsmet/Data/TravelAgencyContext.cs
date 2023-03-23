@@ -26,7 +26,7 @@ namespace TravelAgency.Data
             {
                 //DESKTOP-J4IDPFS\SQLEXPRESS na ismet
                 //DESKTOP-E42ENN9\SQLEXPRESS na kris
-                optionsBuilder.UseSqlServer(@"Server = DESKTOP-J4IDPFS\SQLEXPRESS; Database = TravelAgency; Integrated security = true");
+                optionsBuilder.UseSqlServer(@"Server = DESKTOP-E42ENN9\SQLEXPRESS; Database = TravelAgency; Integrated security = true");
             }
             base.OnConfiguring(optionsBuilder);
         }
