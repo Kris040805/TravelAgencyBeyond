@@ -10,7 +10,7 @@ using TravelAgency.Data;
 namespace TravelAgencyKrisAndIsmet.Migrations
 {
     [DbContext(typeof(TravelAgencyContext))]
-    [Migration("20230321160807_initial")]
+    [Migration("20230325122126_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
