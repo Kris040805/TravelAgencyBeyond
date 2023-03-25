@@ -55,7 +55,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
                     ClientUpdate();
                     break;
                 case 6:
-                    ClientGetTravelByClientId();
+                    GetTravelByClientId();
                     break;
                 default:
                     Console.WriteLine("Option not available!\nReturning to main menu...");
@@ -186,7 +186,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
         /// <summary>
         /// Returns the travel information about a client
         /// </summary>
-        public void ClientGetTravelByClientId()
+        public void GetTravelByClientId()
         {
             Console.WriteLine("Enter the ID of a client and his travel information will be shown");
             int idClient = int.Parse(Console.ReadLine());

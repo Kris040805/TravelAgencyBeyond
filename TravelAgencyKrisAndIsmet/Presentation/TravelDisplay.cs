@@ -155,7 +155,7 @@ namespace TravelAgencyKrisAndIsmet.Presentation
             var travels = travelBusiness.GetAll();
             if (travels.Count == 0)
             {
-                Console.WriteLine("No buses found!");
+                Console.WriteLine("No travels found!");
                 return;
             }
             foreach (var travel in travels)
